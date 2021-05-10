@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Premier cours pour comprendre le Javascript - QCM </title>
+	</head>
+	
+	<body>
+		<p>Matéo Lhuissier 1G04</p>
+		<h1><center>QCM</center></h1><br>
+		<h2><u>Vrai ou Faux ?</u></h2>
+		<p>
+		Il existe une grenouille rose (1pt)<br>
+		<input type = "button" value="Vrai" onclick="Vraioufaux('V')"/>
+		Ou 
+		<input type = "button" value="Faux" onclick="Vraioufaux('F')"/></p>
+		<p id="p">Réponse selectionné:</p>
+		<p><h2><u>QCM</u></h2>
+		<select id="choix" name="animal" onchange="QCM()">
+		<option value="0">Quel est l'animal le moins rapide au monde ?</option>
+		<option value="e">L'escargot</option>
+		<option value="v">Le verre de terre</option>
+		<option value="l">La limace</option>
+		<option value="p">Le paresseux</option>
+		<option value="m">Ma mère sur l'autoroute</option>
+		</select> (2pts)<br>
+		<h2><u>Question ?</u></h2>
+		Quel phrase mythique dit Dark Vador à Luke Skywalker dans Star Wars V ? (2pts)
+		<br><textarea type="text" name="Dicton" rows="3" cols="40" id="Reponse" value="" onchange="question()">Ne mettez pas de guillemets, seulement la phrase demandé avec une majuscule en début et un point à la fin</textarea><br>
+		<br><input type="submit" value="Valider" onclick="total_compteur('Valider')"/>
+		</p>
+		<script src=ex6.js></script>
+	</body>
+</html>

@@ -1,0 +1,1 @@
+alert('Bonjour à la classe de première NSI');
